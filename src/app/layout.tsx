@@ -1,5 +1,8 @@
 import type { Metadata } from 'next'
 import './globals.css'
+import SessionProvider from '@/components/SessionProvider'
+import Navbar from '@/components/layout/Navbar'
+import Footer from '@/components/layout/Footer'
 
 export const metadata: Metadata = {
   title: 'Venticks - Nigerian Event Ticketing Platform',
@@ -16,7 +19,13 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body className="flex flex-col min-h-screen">
+        <SessionProvider>
+          <Navbar />
+          <main className="flex-grow">{children}</main>
+          <Footer />
+        </SessionProvider>
+      </body>
     </html>
   )
 }
