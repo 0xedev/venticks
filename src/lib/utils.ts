@@ -26,7 +26,7 @@ export function generateSlug(title: string): string {
 }
 
 export function generateReference(): string {
-  return `VNT-${Date.now()}-${Math.random().toString(36).substr(2, 9).toUpperCase()}`
+  return `VNT-${Date.now()}-${Math.random().toString(36).substring(2, 11).toUpperCase()}`
 }
 
 export function getWATTime(): Date {

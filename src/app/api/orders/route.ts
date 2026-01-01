@@ -85,11 +85,17 @@ export async function POST(req: NextRequest) {
     })
 
     // Add to queue for processing (will create tickets after payment)
-    await ticketPurchaseQueue.add('process-ticket-purchase', {
-      orderId: order.id,
-      userId,
-      tickets: data.tickets,
-    })
+    try {
+      await ticketPurchaseQueue.add('process-ticket-purchase', {
+        orderId: order.id,
+        userId,
+        tickets: data.tickets,
+      })
+    } catch (queueError) {
+      console.error('Failed to add order to queue:', queueError)
+      // Order created but queue failed - log for manual processing
+      // In production, implement retry logic or alert system
+    }
 
     return NextResponse.json({
       message: 'Order created successfully',

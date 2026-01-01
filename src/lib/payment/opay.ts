@@ -1,4 +1,5 @@
 import axios from 'axios'
+import crypto from 'crypto'
 
 const OPAY_MERCHANT_ID = process.env.OPAY_MERCHANT_ID
 const OPAY_SECRET_KEY = process.env.OPAY_SECRET_KEY
@@ -47,14 +48,13 @@ interface VerifyPaymentResponse {
 
 export class OpayService {
   private static generateSignature(data: Record<string, any>): string {
-    const crypto = require('crypto')
     const sortedKeys = Object.keys(data).sort()
     const signatureString = sortedKeys
       .map((key) => `${key}=${data[key]}`)
       .join('&')
     
     return crypto
-      .createHmac('sha512', OPAY_SECRET_KEY)
+      .createHmac('sha512', OPAY_SECRET_KEY!)
       .update(signatureString)
       .digest('hex')
   }
@@ -120,9 +120,8 @@ export class OpayService {
   }
 
   static verifyWebhookSignature(payload: string, signature: string): boolean {
-    const crypto = require('crypto')
     const hash = crypto
-      .createHmac('sha512', OPAY_SECRET_KEY)
+      .createHmac('sha512', OPAY_SECRET_KEY!)
       .update(payload)
       .digest('hex')
     return hash === signature

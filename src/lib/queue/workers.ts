@@ -83,7 +83,7 @@ export const ticketPurchaseWorker = new Worker<TicketPurchaseJobData>(
 
         // Create tickets with QR codes
         for (let i = 0; i < ticketRequest.quantity; i++) {
-          const ticketId = `${Date.now()}-${Math.random().toString(36).substr(2, 9)}`
+          const ticketId = `${Date.now()}-${Math.random().toString(36).substring(2, 11)}`
           const qrCode = await QRCode.toDataURL(ticketId)
 
           const ticket = await prisma.ticket.create({
