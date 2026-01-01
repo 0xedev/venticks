@@ -1,0 +1,105 @@
+{
+  "common": {
+    "appName": "Venticks",
+    "loading": "Na-ebu...",
+    "error": "Njehie mere",
+    "success": "Ọ gara nke ọma!",
+    "cancel": "Kagbuo",
+    "confirm": "Kwenye",
+    "save": "Chekwaa",
+    "delete": "Hichapụ",
+    "edit": "Dezie",
+    "close": "Mechie",
+    "search": "Chọọ",
+    "filter": "Kpochapụ",
+    "currency": "₦"
+  },
+  "nav": {
+    "home": "Ụlọ",
+    "events": "Ihe Omume",
+    "myTickets": "Tiketi M",
+    "dashboard": "Dashboard",
+    "login": "Banye",
+    "register": "Debanye Aha",
+    "logout": "Pụọ"
+  },
+  "home": {
+    "hero": {
+      "title": "Chọta Ihe Omume Dị Egwu Na Naịjirịa",
+      "subtitle": "Zụta tiketi maka egwu egwu, nnọkọ, egwuregwu, na ndị ọzọ",
+      "cta": "Lee Ihe Omume"
+    },
+    "featured": "Ihe Omume Pụtara Ìhè",
+    "categories": "Ụdị Ihe Omume"
+  },
+  "events": {
+    "title": "Ihe Omume",
+    "noEvents": "Enweghị ihe omume achọtara",
+    "viewDetails": "Lee Nkọwa",
+    "buyTickets": "Zụta Tiketi",
+    "soldOut": "Erela ya niile",
+    "date": "Ụbọchị",
+    "time": "Oge",
+    "venue": "Ebe",
+    "organizer": "Onye Nhazi",
+    "category": "Ụdị",
+    "description": "Nkọwa"
+  },
+  "tickets": {
+    "available": "Dị",
+    "soldOut": "Erela ya niile",
+    "selectQuantity": "Họrọ Ọnụọgụ",
+    "ticketType": "Ụdị Tiketi",
+    "price": "Ọnụahịa",
+    "quantity": "Ọnụọgụ",
+    "total": "Ngụkọta",
+    "checkout": "Gaa N'ihu Ịkwụ Ụgwọ"
+  },
+  "checkout": {
+    "title": "Ịkwụ Ụgwọ",
+    "orderSummary": "Nchịkọta Iwu",
+    "paymentMethod": "Ụzọ Ịkwụ Ụgwọ",
+    "paystack": "Kwụọ Ụgwọ Site na Paystack (Kaadị, Mbufe Ụlọ Akụ, USSD)",
+    "opay": "Kwụọ Ụgwọ Site na OPay",
+    "completePayment": "Mechaa Ịkwụ Ụgwọ",
+    "processing": "Na-ahazi ịkwụ ụgwọ..."
+  },
+  "auth": {
+    "login": "Banye",
+    "register": "Debanye Aha",
+    "email": "Email",
+    "password": "Okwuntughe",
+    "name": "Aha Zuru Ezu",
+    "phone": "Nọmba Ekwentị",
+    "confirmPassword": "Kwenye Okwuntughe",
+    "forgotPassword": "Ichefuru okwuntughe?",
+    "noAccount": "Ị nweghị akaụntụ?",
+    "hasAccount": "Ị nwere akaụntụ?",
+    "signUp": "Debanye Aha",
+    "signIn": "Banye"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "myEvents": "Ihe Omume M",
+    "createEvent": "Mepụta Ihe Omume",
+    "eventTitle": "Aha Ihe Omume",
+    "eventDescription": "Nkọwa Ihe Omume",
+    "eventDate": "Ụbọchị Ihe Omume",
+    "eventTime": "Oge Ihe Omume",
+    "eventVenue": "Ebe Ihe Omume",
+    "eventCategory": "Ụdị Ihe Omume",
+    "eventCapacity": "Ike Ihe Omume",
+    "eventImages": "Onyonyo Ihe Omume",
+    "submit": "Zitere Ihe Omume",
+    "draft": "Edepu",
+    "pending": "Na-echere Nkwado",
+    "approved": "Akwadoro",
+    "rejected": "Ajụrụ"
+  },
+  "validation": {
+    "required": "Oghere a dị mkpa",
+    "invalidEmail": "Adreesị email ezighi ezi",
+    "passwordMismatch": "Okwuntughe adabaghị",
+    "minLength": "Ọ ga-abụrịrị opekata mpe mkpụrụedemede {{min}}"
+  }
+}

@@ -1,0 +1,105 @@
+{
+  "common": {
+    "appName": "Venticks",
+    "loading": "Dey load...",
+    "error": "Wahala don happen",
+    "success": "E don work!",
+    "cancel": "Cancel am",
+    "confirm": "Confirm",
+    "save": "Save am",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "search": "Search",
+    "filter": "Filter",
+    "currency": "₦"
+  },
+  "nav": {
+    "home": "Home",
+    "events": "Events",
+    "myTickets": "My Tickets",
+    "dashboard": "Dashboard",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout"
+  },
+  "home": {
+    "hero": {
+      "title": "Find Amazing Events for Naija",
+      "subtitle": "Buy ticket for concert, conference, sports, and more",
+      "cta": "Check Events"
+    },
+    "featured": "Top Events",
+    "categories": "Event Categories"
+  },
+  "events": {
+    "title": "Events",
+    "noEvents": "No event dey here",
+    "viewDetails": "See Details",
+    "buyTickets": "Buy Tickets",
+    "soldOut": "E don finish",
+    "date": "Date",
+    "time": "Time",
+    "venue": "Venue",
+    "organizer": "Organizer",
+    "category": "Category",
+    "description": "Description"
+  },
+  "tickets": {
+    "available": "Dey available",
+    "soldOut": "E don finish",
+    "selectQuantity": "Select how many",
+    "ticketType": "Ticket Type",
+    "price": "Price",
+    "quantity": "How many",
+    "total": "Total",
+    "checkout": "Go pay"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "orderSummary": "Order Summary",
+    "paymentMethod": "How you wan pay",
+    "paystack": "Pay with Paystack (Card, Bank Transfer, USSD)",
+    "opay": "Pay with OPay",
+    "completePayment": "Complete Payment",
+    "processing": "Dey process payment..."
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "email": "Email",
+    "password": "Password",
+    "name": "Your Name",
+    "phone": "Phone Number",
+    "confirmPassword": "Type password again",
+    "forgotPassword": "You forget password?",
+    "noAccount": "You no get account?",
+    "hasAccount": "You get account already?",
+    "signUp": "Sign Up",
+    "signIn": "Sign In"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "myEvents": "My Events",
+    "createEvent": "Create Event",
+    "eventTitle": "Event Title",
+    "eventDescription": "Event Description",
+    "eventDate": "Event Date",
+    "eventTime": "Event Time",
+    "eventVenue": "Event Venue",
+    "eventCategory": "Event Category",
+    "eventCapacity": "Event Capacity",
+    "eventImages": "Event Images",
+    "submit": "Submit Event",
+    "draft": "Draft",
+    "pending": "Dey wait for approval",
+    "approved": "E don approve",
+    "rejected": "Dem reject am"
+  },
+  "validation": {
+    "required": "You must fill this one",
+    "invalidEmail": "Email no correct",
+    "passwordMismatch": "Password no match",
+    "minLength": "E must reach {{min}} characters"
+  }
+}

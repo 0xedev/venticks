@@ -1,0 +1,105 @@
+{
+  "common": {
+    "appName": "Venticks",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success",
+    "cancel": "Cancel",
+    "confirm": "Confirm",
+    "save": "Save",
+    "delete": "Delete",
+    "edit": "Edit",
+    "close": "Close",
+    "search": "Search",
+    "filter": "Filter",
+    "currency": "₦"
+  },
+  "nav": {
+    "home": "Home",
+    "events": "Events",
+    "myTickets": "My Tickets",
+    "dashboard": "Dashboard",
+    "login": "Login",
+    "register": "Register",
+    "logout": "Logout"
+  },
+  "home": {
+    "hero": {
+      "title": "Discover Amazing Events in Nigeria",
+      "subtitle": "Book tickets for concerts, conferences, sports, and more",
+      "cta": "Browse Events"
+    },
+    "featured": "Featured Events",
+    "categories": "Event Categories"
+  },
+  "events": {
+    "title": "Events",
+    "noEvents": "No events found",
+    "viewDetails": "View Details",
+    "buyTickets": "Buy Tickets",
+    "soldOut": "Sold Out",
+    "date": "Date",
+    "time": "Time",
+    "venue": "Venue",
+    "organizer": "Organizer",
+    "category": "Category",
+    "description": "Description"
+  },
+  "tickets": {
+    "available": "Available",
+    "soldOut": "Sold Out",
+    "selectQuantity": "Select Quantity",
+    "ticketType": "Ticket Type",
+    "price": "Price",
+    "quantity": "Quantity",
+    "total": "Total",
+    "checkout": "Proceed to Checkout"
+  },
+  "checkout": {
+    "title": "Checkout",
+    "orderSummary": "Order Summary",
+    "paymentMethod": "Payment Method",
+    "paystack": "Pay with Paystack (Card, Bank Transfer, USSD)",
+    "opay": "Pay with OPay",
+    "completePayment": "Complete Payment",
+    "processing": "Processing payment..."
+  },
+  "auth": {
+    "login": "Login",
+    "register": "Register",
+    "email": "Email",
+    "password": "Password",
+    "name": "Full Name",
+    "phone": "Phone Number",
+    "confirmPassword": "Confirm Password",
+    "forgotPassword": "Forgot Password?",
+    "noAccount": "Don't have an account?",
+    "hasAccount": "Already have an account?",
+    "signUp": "Sign Up",
+    "signIn": "Sign In"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "myEvents": "My Events",
+    "createEvent": "Create Event",
+    "eventTitle": "Event Title",
+    "eventDescription": "Event Description",
+    "eventDate": "Event Date",
+    "eventTime": "Event Time",
+    "eventVenue": "Event Venue",
+    "eventCategory": "Event Category",
+    "eventCapacity": "Event Capacity",
+    "eventImages": "Event Images",
+    "submit": "Submit Event",
+    "draft": "Draft",
+    "pending": "Pending Approval",
+    "approved": "Approved",
+    "rejected": "Rejected"
+  },
+  "validation": {
+    "required": "This field is required",
+    "invalidEmail": "Invalid email address",
+    "passwordMismatch": "Passwords do not match",
+    "minLength": "Must be at least {{min}} characters"
+  }
+}

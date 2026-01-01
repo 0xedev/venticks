@@ -1,0 +1,114 @@
+import axios from 'axios'
+import crypto from 'crypto'
+
+const PAYSTACK_SECRET_KEY = process.env.PAYSTACK_SECRET_KEY
+const PAYSTACK_BASE_URL = 'https://api.paystack.co'
+
+interface InitializePaymentParams {
+  email: string
+  amount: number // in kobo
+  reference: string
+  metadata?: Record<string, any>
+  callback_url?: string
+}
+
+interface InitializePaymentResponse {
+  status: boolean
+  message: string
+  data: {
+    authorization_url: string
+    access_code: string
+    reference: string
+  }
+}
+
+interface VerifyPaymentResponse {
+  status: boolean
+  message: string
+  data: {
+    id: number
+    domain: string
+    status: string
+    reference: string
+    amount: number
+    message: string | null
+    gateway_response: string
+    paid_at: string
+    created_at: string
+    channel: string
+    currency: string
+    ip_address: string
+    metadata: Record<string, any>
+    fees: number
+    customer: {
+      id: number
+      first_name: string | null
+      last_name: string | null
+      email: string
+      customer_code: string
+      phone: string | null
+      metadata: Record<string, any>
+      risk_action: string
+    }
+    authorization: {
+      authorization_code: string
+      bin: string
+      last4: string
+      exp_month: string
+      exp_year: string
+      channel: string
+      card_type: string
+      bank: string
+      country_code: string
+      brand: string
+      reusable: boolean
+      signature: string
+      account_name: string | null
+    }
+  }
+}
+
+export class PaystackService {
+  private static axiosInstance = axios.create({
+    baseURL: PAYSTACK_BASE_URL,
+    headers: {
+      Authorization: `Bearer ${PAYSTACK_SECRET_KEY}`,
+      'Content-Type': 'application/json',
+    },
+  })
+
+  static async initializePayment(
+    params: InitializePaymentParams
+  ): Promise<InitializePaymentResponse> {
+    try {
+      const response = await this.axiosInstance.post<InitializePaymentResponse>(
+        '/transaction/initialize',
+        params
+      )
+      return response.data
+    } catch (error: any) {
+      console.error('Paystack initialization error:', error.response?.data || error.message)
+      throw new Error(error.response?.data?.message || 'Failed to initialize payment')
+    }
+  }
+
+  static async verifyPayment(reference: string): Promise<VerifyPaymentResponse> {
+    try {
+      const response = await this.axiosInstance.get<VerifyPaymentResponse>(
+        `/transaction/verify/${reference}`
+      )
+      return response.data
+    } catch (error: any) {
+      console.error('Paystack verification error:', error.response?.data || error.message)
+      throw new Error(error.response?.data?.message || 'Failed to verify payment')
+    }
+  }
+
+  static verifyWebhookSignature(payload: string, signature: string): boolean {
+    const hash = crypto
+      .createHmac('sha512', PAYSTACK_SECRET_KEY!)
+      .update(payload)
+      .digest('hex')
+    return hash === signature
+  }
+}

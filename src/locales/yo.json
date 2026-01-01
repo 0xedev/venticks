@@ -1,0 +1,105 @@
+{
+  "common": {
+    "appName": "Venticks",
+    "loading": "Ó ń gbé...",
+    "error": "Àṣìṣe kan ṣẹlẹ̀",
+    "success": "Àṣeyọrí!",
+    "cancel": "Fagilee",
+    "confirm": "Jẹ́rìísí",
+    "save": "Fipamọ́",
+    "delete": "Parẹ́",
+    "edit": "Ṣàtúnṣe",
+    "close": "Tíì",
+    "search": "Wá",
+    "filter": "Yọ̀rọ̀",
+    "currency": "₦"
+  },
+  "nav": {
+    "home": "Ilé",
+    "events": "Àwọn Ìṣẹ̀lẹ̀",
+    "myTickets": "Àwọn Tíkẹ́ẹ̀tì Mi",
+    "dashboard": "Dashboard",
+    "login": "Wọlé",
+    "register": "Forúkọsílẹ̀",
+    "logout": "Jáde"
+  },
+  "home": {
+    "hero": {
+      "title": "Wá Àwọn Ìṣẹ̀lẹ̀ Tó Dára Ní Nàìjíríà",
+      "subtitle": "Ra tíkẹ́ẹ̀tì fún àwọn eré orin, àpéjọ, eré ìdárayá, àti bẹ́ẹ̀ bẹ́ẹ̀ lọ",
+      "cta": "Wo Àwọn Ìṣẹ̀lẹ̀"
+    },
+    "featured": "Àwọn Ìṣẹ̀lẹ̀ Tó Ṣe Pàtàkì",
+    "categories": "Àwọn Ẹ̀ka Ìṣẹ̀lẹ̀"
+  },
+  "events": {
+    "title": "Àwọn Ìṣẹ̀lẹ̀",
+    "noEvents": "Kò sí ìṣẹ̀lẹ̀ kankan",
+    "viewDetails": "Wo Àlàyé",
+    "buyTickets": "Ra Tíkẹ́ẹ̀tì",
+    "soldOut": "Ó ti tán",
+    "date": "Ọjọ́",
+    "time": "Àkókò",
+    "venue": "Ibi Ìṣẹ̀lẹ̀",
+    "organizer": "Olùṣètò",
+    "category": "Ẹ̀ka",
+    "description": "Àlàyé"
+  },
+  "tickets": {
+    "available": "Ó wà",
+    "soldOut": "Ó ti tán",
+    "selectQuantity": "Yan Iye",
+    "ticketType": "Irú Tíkẹ́ẹ̀tì",
+    "price": "Iye Owó",
+    "quantity": "Iye",
+    "total": "Àpapọ̀",
+    "checkout": "Tẹ̀síwájú Láti San"
+  },
+  "checkout": {
+    "title": "Ìsanwó",
+    "orderSummary": "Àkójọpọ̀ Ìbéèrè",
+    "paymentMethod": "Ọ̀nà Ìsanwó",
+    "paystack": "Sanwó Pẹ̀lú Paystack (Káàdì, Gbígbé Owó Bánkì, USSD)",
+    "opay": "Sanwó Pẹ̀lú OPay",
+    "completePayment": "Parí Ìsanwó",
+    "processing": "Ń ṣiṣẹ́ lórí ìsanwó..."
+  },
+  "auth": {
+    "login": "Wọlé",
+    "register": "Forúkọsílẹ̀",
+    "email": "Ímeèlì",
+    "password": "Ọ̀rọ̀ Aṣínà",
+    "name": "Orúkọ Kíkún",
+    "phone": "Nọ́mbà Fóònù",
+    "confirmPassword": "Jẹ́rìísí Ọ̀rọ̀ Aṣínà",
+    "forgotPassword": "Ṣé o gbàgbé ọ̀rọ̀ aṣínà?",
+    "noAccount": "Kò ní àkáǹtì?",
+    "hasAccount": "Ní àkáǹtì tẹ́lẹ̀?",
+    "signUp": "Forúkọsílẹ̀",
+    "signIn": "Wọlé"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "myEvents": "Àwọn Ìṣẹ̀lẹ̀ Mi",
+    "createEvent": "Ṣẹ̀dá Ìṣẹ̀lẹ̀",
+    "eventTitle": "Àkọlé Ìṣẹ̀lẹ̀",
+    "eventDescription": "Àlàyé Ìṣẹ̀lẹ̀",
+    "eventDate": "Ọjọ́ Ìṣẹ̀lẹ̀",
+    "eventTime": "Àkókò Ìṣẹ̀lẹ̀",
+    "eventVenue": "Ibi Ìṣẹ̀lẹ̀",
+    "eventCategory": "Ẹ̀ka Ìṣẹ̀lẹ̀",
+    "eventCapacity": "Agbára Ìṣẹ̀lẹ̀",
+    "eventImages": "Àwọn Àwòrán Ìṣẹ̀lẹ̀",
+    "submit": "Firánṣẹ́ Ìṣẹ̀lẹ̀",
+    "draft": "Àpapọ̀",
+    "pending": "Ń Dúró Fún Ìfàsí",
+    "approved": "Tí Fàsí",
+    "rejected": "Tí Kọ̀"
+  },
+  "validation": {
+    "required": "Àyè yìí jẹ́ dandan",
+    "invalidEmail": "Ímèélì kò tọ́",
+    "passwordMismatch": "Àwọn ọ̀rọ̀ aṣínà kò báramu",
+    "minLength": "Ó gbọdọ̀ jẹ́ ó kéré jù {{min}} lẹ́tà"
+  }
+}
