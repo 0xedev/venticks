@@ -1,0 +1,105 @@
+{
+  "common": {
+    "appName": "Venticks",
+    "loading": "Ana lodi...",
+    "error": "Kuskure ya faru",
+    "success": "Nasara!",
+    "cancel": "Soke",
+    "confirm": "Tabbatar",
+    "save": "Ajiye",
+    "delete": "Share",
+    "edit": "Gyara",
+    "close": "Rufe",
+    "search": "Nema",
+    "filter": "Tace",
+    "currency": "₦"
+  },
+  "nav": {
+    "home": "Gida",
+    "events": "Abubuwan",
+    "myTickets": "Tiketi Na",
+    "dashboard": "Dashboard",
+    "login": "Shiga",
+    "register": "Yi Rajista",
+    "logout": "Fita"
+  },
+  "home": {
+    "hero": {
+      "title": "Nemo Abubuwan Masu Ban Mamaki A Najeriya",
+      "subtitle": "Sayi tiketi don wasan kide-kide, taron, wasanni, da sauransu",
+      "cta": "Duba Abubuwan"
+    },
+    "featured": "Manyan Abubuwan",
+    "categories": "Nau'in Abubuwa"
+  },
+  "events": {
+    "title": "Abubuwan",
+    "noEvents": "Babu wani abu",
+    "viewDetails": "Duba Cikakken Bayani",
+    "buyTickets": "Sayi Tiketi",
+    "soldOut": "An sayar da su duka",
+    "date": "Kwanan wata",
+    "time": "Lokaci",
+    "venue": "Wurin",
+    "organizer": "Mai shirya",
+    "category": "Nau'i",
+    "description": "Bayanin"
+  },
+  "tickets": {
+    "available": "Akwai",
+    "soldOut": "An sayar da su duka",
+    "selectQuantity": "Zabi Adadi",
+    "ticketType": "Nau'in Tiketi",
+    "price": "Farashi",
+    "quantity": "Adadi",
+    "total": "Jimlar",
+    "checkout": "Ci gaba zuwa Biya"
+  },
+  "checkout": {
+    "title": "Biya",
+    "orderSummary": "Takamaiman Oda",
+    "paymentMethod": "Hanyar Biya",
+    "paystack": "Biya ta Paystack (Kati, Canja Banki, USSD)",
+    "opay": "Biya ta OPay",
+    "completePayment": "Kammala Biya",
+    "processing": "Ana aiwatar da biya..."
+  },
+  "auth": {
+    "login": "Shiga",
+    "register": "Yi Rajista",
+    "email": "Imel",
+    "password": "Kalmar Sirri",
+    "name": "Cikakken Suna",
+    "phone": "Lambar Waya",
+    "confirmPassword": "Tabbatar Kalmar Sirri",
+    "forgotPassword": "Ka manta kalmar sirri?",
+    "noAccount": "Ba ku da asusu?",
+    "hasAccount": "Kuna da asusu?",
+    "signUp": "Yi Rajista",
+    "signIn": "Shiga"
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "myEvents": "Abubuwan Na",
+    "createEvent": "Kirkiro Abu",
+    "eventTitle": "Taken Abu",
+    "eventDescription": "Bayanin Abu",
+    "eventDate": "Ranar Abu",
+    "eventTime": "Lokacin Abu",
+    "eventVenue": "Wurin Abu",
+    "eventCategory": "Nau'in Abu",
+    "eventCapacity": "Iyawar Abu",
+    "eventImages": "Hotunan Abu",
+    "submit": "Aika Abu",
+    "draft": "Daftari",
+    "pending": "Ana Jiran Amincewa",
+    "approved": "An Amince",
+    "rejected": "An Ki"
+  },
+  "validation": {
+    "required": "Ana bukata wannan filin",
+    "invalidEmail": "Imel ba daidai ba ne",
+    "passwordMismatch": "Kalmomin sirri ba su dace ba",
+    "minLength": "Dole ne ya zama aƙalla haruffa {{min}}"
+  }
+}
